@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset=utf-8>
+    <title>AI Illust Prompt Generator</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
+</head>
+<body class="m-2">
+
+    <div>
+        <h1>AI Illust Prompt Generator</h1>
+    </div>
+
+    <div class="m-3 mt-5">
+        <label for="prompt">Prompt</label>
+        <input type="text" id="prompt" readonly="readonly" />
+        <button id="copy-button" type="button">Copy</button>
+    </div>
+
+    <div class="container-fluid mt-5">
+        <h4>キーワード</h4>
+        <form>
+            <div class="form-group form-check form-switch">
+                <div id="keywordCategories" class="row">
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <div>
+        <h2 class="h3 mt-4">概要</h4>
+        画像生成AI用のプロンプトを生成します。<br />
+        主にkawaii系向けの調整です。<br />
+        <h2 class="h3 mt-4">操作説明</h4>
+        キーワードを選択するとPrompt欄に反映されます。<br />
+        コピーしてStableDiffusion等のツールに貼り付けてください。
+        <h2 class="h3 mt-4">注意事項</h4>
+        プロンプトで生成した画像について、品質や権利の問題が無いことを保障するものではありません。<br />
+        個人の趣味の範囲でご利用ください。<br />
+        掲載キーワードや対応プロンプトは気分で変更されることがあります。<br />
+    </div>
+
+    <div class="mt-4">
+        作った人：<a href="https://twitter.com/inani_waon">@inani_waon</a>
+    </div>
+
+</body>
+</html>
